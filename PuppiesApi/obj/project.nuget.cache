@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "JBbySqd4OCYW9kXaOre0CxgCS2FvJt7lI4rgwj2i94sOVadDrj/VP12ar7Sk00Jhnwp9n08p6MroKZakrmw/0g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mintu\\swathistudy\\pgp\\TypeScript\\PuppiesAPI\\PuppiesApi\\PuppiesApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mintu\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Mintu\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Mintu\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Mintu\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Mintu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Mintu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
