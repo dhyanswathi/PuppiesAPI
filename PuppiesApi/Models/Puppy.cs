@@ -2,14 +2,17 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace PuppiesApi.Models
 {
-    public partial class Puppies
+    public partial class Puppy
     {
         public int PuppyId { get; set; }
         public string Breed { get; set; }
         public string Name { get; set; }
-        public DateTime? BirthDate { get; set; }
+        [DataType(DataType.Date)]
+
+        public DateTime BirthDate { get; set; }
     }
 }

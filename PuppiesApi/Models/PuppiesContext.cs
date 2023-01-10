@@ -18,28 +18,21 @@ namespace PuppiesApi.Models
         {
         }
 
-        public virtual DbSet<Puppies> Puppies { get; set; }
+        public virtual DbSet<Puppy> Puppy { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=LAPTOP-AC42D6SP\\MSSQLSERVER01;Initial Catalog=Puppies;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=LAPTOP-AC42D6SP\\MSSQLSERVER01;Initial Catalog=Puppies;encrypt=false;Integrated Security=True");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Puppies>(entity =>
+            modelBuilder.Entity<Puppy>(entity =>
             {
-                entity.HasKey(e => e.PuppyId)
-                    .HasName("PK__Puppies__81CEA8B323C67D64");
-
-                entity.Property(e => e.PuppyId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("PuppyID");
-
                 entity.Property(e => e.BirthDate).HasColumnType("date");
 
                 entity.Property(e => e.Breed)
