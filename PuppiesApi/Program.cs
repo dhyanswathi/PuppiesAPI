@@ -11,7 +11,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors();
 
 builder.Services.AddDbContext<PuppiesContext>();
-builder.Services.AddTransient<PuppyRepository>();
+builder.Services.AddTransient<IPuppyRepository, PuppyRepository>();
 
 var app = builder.Build();
 

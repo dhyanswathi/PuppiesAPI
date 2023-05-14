@@ -11,8 +11,8 @@ namespace PuppiesApi.Controller
     [ApiController]
     public class PuppiesController : ControllerBase
     {
-        private PuppyRepository _repo;
-        public PuppiesController(PuppyRepository repo)
+        private IPuppyRepository _repo;
+        public PuppiesController(IPuppyRepository repo)
         {
             _repo = repo;
         }
